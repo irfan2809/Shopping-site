@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping - My Professional Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="centered-container">
+    <a href="index.html" class="btn-back">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back</span>
+    </a>
+    <h2 class="section-title">
+      <i class="fas fa-shopping-bag"></i>
+      Shopping
+    </h2>
+    <div class="card-list">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=facearea&w=200&h=200" alt="Smartphone">
+        <h3>Smartphone</h3>
+        <p><b>₹41,000</b></p>
+        <button class="add-to-cart-btn" onclick="addToCart({name: 'Smartphone', price: 41000, qty: 1})">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=facearea&w=200&h=200" alt="Laptop">
+        <h3>Laptop</h3>
+        <p><b>₹75,000</b></p>
+        <button class="add-to-cart-btn" onclick="addToCart({name: 'Laptop', price: 75000, qty: 1})">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=200&h=200" alt="Headphones">
+        <h3>Headphones</h3>
+        <p><b>₹7,000</b></p>
+        <button class="add-to-cart-btn" onclick="addToCart({name: 'Headphones', price: 7000, qty: 1})">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=200&h=200" alt="Camera">
+        <h3>Camera</h3>
+        <p><b>₹29,000</b></p>
+        <button class="add-to-cart-btn" onclick="addToCart({name: 'Camera', price: 29000, qty: 1})">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=facearea&w=200&h=200" alt="Smartwatch">
+        <h3>Smartwatch</h3>
+        <p><b>₹12,000</b></p>
+        <button class="add-to-cart-btn" onclick="addToCart({name: 'Smartwatch', price: 12000, qty: 1})">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div id="cartNotification" class="cart-notification"></div>
+  <button onclick="document.getElementById('cartNotification').textContent = 'Test notification!'; document.getElementById('cartNotification').classList.add('show'); setTimeout(()=>document.getElementById('cartNotification').classList.remove('show'), 1500);">Test Notification</button>
+  <script src="button-animations.js"></script>
+</body>
+</html> 

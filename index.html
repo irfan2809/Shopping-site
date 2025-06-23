@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="centered-container">
+    <div class="header-section">
+      <div class="logo">
+        <i class="fas fa-cube"></i>
+        <span>Portal</span>
+      </div>
+      <div class="user-info" id="userInfo" style="display: none;">
+        <i class="fas fa-user-circle"></i>
+        <span id="username">Welcome</span>
+        <button id="logoutBtn" class="logout-btn-small">
+          <i class="fas fa-sign-out-alt"></i>
+        </button>
+      </div>
+      <button id="cartBtn" class="cart-btn" title="View Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartCount" class="cart-count">0</span>
+      </button>
+    </div>
+
+    <div class="main-content">
+      <h1 class="section-title">
+        <i class="fas fa-home"></i>
+        Welcome to Your Portal
+      </h1>
+      <p class="subtitle">Access all your services in one place</p>
+      
+      <div class="big-buttons">
+        <a href="groceries.html" class="big-btn btn-groceries">
+          <div class="btn-icon">
+            <i class="fas fa-shopping-basket"></i>
+          </div>
+          <div class="btn-content">
+            <h3>Groceries</h3>
+            <p>Fresh food & essentials</p>
+          </div>
+          <i class="fas fa-arrow-right btn-arrow"></i>
+        </a>
+        
+        <a href="shopping.html" class="big-btn btn-shopping">
+          <div class="btn-icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
+          <div class="btn-content">
+            <h3>Shopping</h3>
+            <p>Fashion & lifestyle</p>
+          </div>
+          <i class="fas fa-arrow-right btn-arrow"></i>
+        </a>
+        
+        <a href="transport.html" class="big-btn btn-transport">
+          <div class="btn-icon">
+            <i class="fas fa-route"></i>
+          </div>
+          <div class="btn-content">
+            <h3>Transport</h3>
+            <p>Travel & commuting</p>
+          </div>
+          <i class="fas fa-arrow-right btn-arrow"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="quick-stats">
+        <div class="stat-item">
+          <i class="fas fa-clock"></i>
+          <span>24/7 Access</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Secure</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Mobile Ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn" class="close-cart-btn" title="Close Cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <span id="cartTotal" class="cart-total">Total: ₹0</span>
+      <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+  <div id="cartOverlay" class="cart-overlay"></div>
+  <div id="cartNotification" class="cart-notification"></div>
+  
+  <script src="auth.js"></script>
+  <script src="button-animations.js"></script>
+</body>
+</html> 
